@@ -72,7 +72,7 @@ export default function TestimonialMap() {
             return (
               <div
                 key={popup.id}
-                className="absolute flex w-[225px] h-[149px] flex-col items-center bg-glass text-white p-3 shadow-lg text-xs animate-pop border-0.4 border-light-gray"
+                className="absolute flex w-[200px] sm:w-[225px] h-[130px] sm:h-[149px] flex-col items-center bg-glass text-white p-3 shadow-lg text-xs sm:text-sm animate-pop border-0.4 border-light-gray"
                 style={{
                   left: `${popup.x}%`,
                   top: `${popup.y}%`,
@@ -85,14 +85,15 @@ export default function TestimonialMap() {
                 }}
               >
                 <p className="font-semibold">{name}</p>
-                <p className="text-[10px]">{title}</p>
+                <p className="text-[10px] sm:text-[12px]">{title}</p>
                 <p className="mt-1 text-gray-300">{description}</p>
+
                 {/* Add small circle at the lower-right corner */}
                 <div
                   className="absolute rounded-full"
                   style={{
-                    width: "18px",
-                    height: "18px",
+                    width: "14px", // Adjust size for smaller devices
+                    height: "14px", // Adjust size for smaller devices
                     bottom: "0", // Align with the bottom of the popup
                     right: "0", // Align with the right of the popup
                     background: "#E63946",

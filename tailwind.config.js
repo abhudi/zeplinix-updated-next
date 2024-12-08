@@ -19,6 +19,7 @@ module.exports = {
         white: "#FFFFFF",
         "light-gray": "#BEBEBE",
         "lighest-gray": "#F0F0F069",
+        "home-card": "#29292961",
       },
       fontSize: {
         "fs-16": "16px", // Custom font size of 20px
@@ -45,6 +46,7 @@ module.exports = {
 
       borderWidth: {
         0.4: "0.4px", // Custom border width
+        0.1: "0.1px", // Custom border width
       },
       lineHeight: {
         1.2: "5px",
