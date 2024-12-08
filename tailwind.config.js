@@ -49,6 +49,23 @@ module.exports = {
       lineHeight: {
         1.2: "5px",
       },
+      animation: {
+        "square-1":
+          "square-anim 1.2s cubic-bezier(0.445, 0.05, 0.55, 0.95) 0s infinite",
+        "square-2":
+          "square-anim 1.2s cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.2s infinite",
+        "square-3":
+          "square-anim 1.2s cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.4s infinite",
+      },
+      keyframes: {
+        "square-anim": {
+          "0%": { height: "80px", backgroundColor: "rgb(111, 163, 240)" },
+          "20%": { height: "80px" },
+          "40%": { height: "120px", backgroundColor: "rgb(111, 200, 240)" },
+          "80%": { height: "80px" },
+          "100%": { height: "80px", backgroundColor: "rgb(111, 163, 240)" },
+        },
+      },
     },
   },
   plugins: [],
