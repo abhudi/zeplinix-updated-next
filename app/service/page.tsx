@@ -1,12 +1,11 @@
+import Aboutheader from "../components/aboutHeader";
+import ServiceSection from "../components/ServiceSection";
+
 export default function Service() {
   return (
-    <main>
-      <h1>Our Services</h1>
-      <ul>
-        <li>Web Development</li>
-        <li>Mobile App Development</li>
-        <li>Cloud Solutions</li>
-      </ul>
-    </main>
+    <>
+      <Aboutheader />
+      <ServiceSection />
+    </>
   );
 }

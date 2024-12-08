@@ -32,7 +32,7 @@ const Header = () => {
           <Link href="/about" className="hover:text-primary">
             About
           </Link>
-          <Link href="/services" className="hover:text-primary">
+          <Link href="/service" className="hover:text-primary">
             Services
           </Link>
           <Link href="/portfolio" className="hover:text-primary">

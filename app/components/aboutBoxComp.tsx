@@ -38,7 +38,7 @@ const AboutBoxComp = () => {
           </div>
         </div>
         {/* Animated Box Container */}
-        <div className="block lg:hidden flex flex-col gap-6 w-full md:w-[424px] lg:h-[510px] overflow-hidden md:animate-scroll mb-10">
+        <div className="lg:hidden flex flex-col gap-6 w-full md:w-[424px] lg:h-[510px] overflow-hidden md:animate-scroll mb-10">
           {/* Left Side - Static Boxes for Small Screens */}
           <div className="grid grid-cols-2 gap-4 md:flex md:flex-col">
             <AboutBox title={data[0].title} value={data[0].value} />
