@@ -15,13 +15,15 @@ const Header = () => {
       <div className="flex justify-between items-center container mx-auto">
         {/* Logo */}
         <div className="flex items-center z-10">
-          <Image
-            src="/logo.png" // Replace with your logo path
-            alt="Logo"
-            width={150}
-            height={50}
-            className="object-contain sm:w-40 lg:w-48"
-          />
+          <Link href="/">
+            <Image
+              src="/logo.png" // Replace with your logo path
+              alt="Logo"
+              width={150}
+              height={50}
+              className="object-contain sm:w-40 lg:w-48"
+            />
+          </Link>
         </div>
 
         {/* Navigation Links */}
