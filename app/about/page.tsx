@@ -1,3 +1,4 @@
+import AboutGrow from "../components/aboutGrow";
 import Aboutheader from "../components/aboutHeader";
 import AboutStats from "../components/aboutStats";
 import FAQ from "../components/Faq";
@@ -9,7 +10,7 @@ export default function About() {
       <Aboutheader />
       <AboutStats />
       <Foundationintegrity />
-
+      <AboutGrow />
       <FAQ />
     </>
   );

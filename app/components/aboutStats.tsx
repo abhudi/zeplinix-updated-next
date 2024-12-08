@@ -4,7 +4,7 @@ import AboutBoxComp from "./aboutBoxComp";
 const AboutStats = () => {
   return (
     <div>
-      <div className="relative mx-9">
+      <div className="relative lg:mx-9 mx-4">
         <AboutBoxComp />
       </div>
     </div>

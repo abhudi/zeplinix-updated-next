@@ -6,7 +6,12 @@ const Foundationintegrity = () => {
       title: "Transparent Communication",
       description: (
         <>
-          Open, honest, and clear <br /> at every step.
+          Open, honest, and clear{" "}
+          <>
+            Solutions tailored to <br className="hidden lg:block" />
+            client needs.
+          </>
+          at every step.
         </>
       ),
     },
@@ -14,7 +19,12 @@ const Foundationintegrity = () => {
       title: "Integrity in Delivery",
       description: (
         <>
-          We deliver on our <br /> promises.
+          We deliver on our{" "}
+          <>
+            Solutions tailored to <br className="hidden lg:block" />
+            client needs.
+          </>
+          promises.
         </>
       ),
     },
@@ -22,7 +32,11 @@ const Foundationintegrity = () => {
       title: "Client-Centric Focus",
       description: (
         <>
-          Solutions tailored to <br />
+          Solutions tailored to{" "}
+          <>
+            Solutions tailored to <br className="hidden lg:block" />
+            client needs.
+          </>
           client needs.
         </>
       ),
@@ -31,14 +45,19 @@ const Foundationintegrity = () => {
       title: "Collaborative Environment",
       description: (
         <>
-          Inclusive teamwork <br /> drives innovation.
+          Inclusive teamwork
+          <>
+            Solutions tailored to <br className="hidden lg:block" />
+            client needs.
+          </>
+          drives innovation.
         </>
       ),
     },
   ];
 
   return (
-    <div className="mx-9">
+    <div className="mx-4 lg:mx-9 lg:mt-10">
       <div className="p-4">
         <h1 className="text-white text-fs-44 text-left ">
           A Foundation Of <span className="text-primary">Integrity</span>

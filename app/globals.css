@@ -58,3 +58,20 @@ body {
 .slider::-webkit-scrollbar {
   display: none; /* Hide scrollbar */
 }
+
+/* animation */
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(150px); /* Move Down */
+  }
+  100% {
+    transform: translateY(0); /* Return to Top */
+  }
+}
+
+.animate-scroll {
+  animation: scroll 5s infinite ease-in-out;
+}

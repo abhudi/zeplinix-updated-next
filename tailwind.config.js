@@ -24,6 +24,8 @@ module.exports = {
         "fs-16": "16px", // Custom font size of 20px
         "fs-20": "20px", // Custom font size of 20px
         "fs-24": "24px", // Custom font size of 20px
+        "fs-25": "25px", // Custom font size of 20px
+        "fs-26": "26px", // Custom font size of 20px
         "fs-30": "30px", // Custom font size of 20px
         "fs-44": "44px", // Custom font size of 20px
         "fs-54": "54px", // Custom font size of 20px
@@ -43,6 +45,9 @@ module.exports = {
 
       borderWidth: {
         0.4: "0.4px", // Custom border width
+      },
+      lineHeight: {
+        1.2: "5px",
       },
     },
   },
