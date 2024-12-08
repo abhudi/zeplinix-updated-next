@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import { useState, useEffect } from "react";
 
 interface Popup {
   id: string;
@@ -8,48 +7,15 @@ interface Popup {
   y: number;
 }
 
-export default function Testimonialmap() {
-  const [popups, setPopups] = useState<Popup[]>([]);
-
-  const isOverlapping = (
-    x: number,
-    y: number,
-    existingPopups: Popup[]
-  ): boolean => {
-    const threshold = 10; // Minimum distance between popups in percentage
-    return existingPopups.some((popup) => {
-      const distance = Math.sqrt((popup.x - x) ** 2 + (popup.y - y) ** 2);
-      return distance < threshold;
-    });
-  };
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      let randomX, randomY;
-
-      // Generate random positions until there is no overlap
-      do {
-        randomX = Math.random() * (20 + 40); // Random X position in %
-        randomY = Math.random() * (30 + 40); // Random Y position in %
-      } while (isOverlapping(randomX, randomY, popups));
-
-      const id = Math.random().toString(36).substring(2, 9); // Unique ID for popup
-
-      setPopups((prevPopups) => [
-        ...prevPopups,
-        { id, x: randomX, y: randomY },
-      ]);
-
-      // Remove popup after 5 seconds
-      setTimeout(() => {
-        setPopups((prevPopups) =>
-          prevPopups.filter((popup) => popup.id !== id)
-        );
-      }, 5000);
-    }, 1500); // New popup every 1.5 seconds
-
-    return () => clearInterval(interval); // Cleanup on component unmount
-  }, [popups]);
+export default function TestimonialMap() {
+  const popups: Popup[] = [
+    { id: "1", x: 10, y: 15 }, // Define static positions here
+    { id: "2", x: 70, y: 15 },
+    { id: "3", x: 45, y: 45 },
+    { id: "4", x: 16, y: 70 },
+    { id: "5", x: 75, y: 70 },
+    // Add more positions as needed
+  ];
 
   const popupContent = [
     {
@@ -70,6 +36,7 @@ export default function Testimonialmap() {
     },
     // Add more content as needed
   ];
+
   return (
     <>
       <div className="text-center">
@@ -80,7 +47,7 @@ export default function Testimonialmap() {
           page, or admin panel for your SaaS.
         </p>
       </div>
-      <div className="flex items-center justify-center  bg-black">
+      <div className="flex items-center justify-center bg-black">
         {/* Map Container */}
         <div className="relative w-[90%] max-w-5xl aspect-video mt-20">
           {/* Map Image */}
@@ -97,7 +64,7 @@ export default function Testimonialmap() {
               zIndex: "1", // Make sure it’s behind the map
             }}
           ></div>
-          {/* Popups */}
+          {/* Static Popups */}
           {popups.map((popup, index) => {
             const { name, title, description } =
               popupContent[index % popupContent.length]; // Cycle through the content array
