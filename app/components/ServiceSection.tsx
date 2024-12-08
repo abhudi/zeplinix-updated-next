@@ -68,7 +68,7 @@ const ServicePage = () => {
         style={{
           background:
             "radial-gradient(50% 50% at 50% 50%, rgba(230, 57, 70, 0.35) 0%, rgba(128, 32, 39, 0) 100%)",
-          rotate: "180deg",
+          transform: "rotate(180deg)",
         }}
       ></div>
       {/* Second Absolute */}
@@ -77,7 +77,7 @@ const ServicePage = () => {
         style={{
           background:
             "radial-gradient(50% 50% at 50% 50%, rgba(230, 57, 70, 0.35) 0%, rgba(128, 32, 39, 0) 100%)",
-          rotate: "150deg",
+          transform: "rotate(150deg)",
         }}
       ></div>
       {/* third Absolute */}
@@ -95,7 +95,7 @@ const ServicePage = () => {
         style={{
           background:
             "radial-gradient(50% 50% at 50% 50%, rgba(230, 57, 70, 0.35) 0%, rgba(128, 32, 39, 0) 100%)",
-          rotate: "180deg",
+          transform: "rotate(180deg)",
         }}
       ></div>
 

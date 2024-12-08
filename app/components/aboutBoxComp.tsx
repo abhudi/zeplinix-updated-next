@@ -17,7 +17,7 @@ const AboutBoxComp = () => {
           style={{
             background:
               "radial-gradient(50% 50% at 50% 50%, rgba(230, 57, 70, 0.35) 0%, rgba(128, 32, 39, 0) 100%)",
-            rotate: "165deg",
+            transform: "rotate(165deg)",
           }}
         ></div>
 

@@ -6,38 +6,23 @@ const Foundationintegrity = () => {
       title: "Transparent Communication",
       description: (
         <>
-          Open, honest, and clear{" "}
-          <>
-            Solutions tailored to <br className="hidden lg:block" />
-            client needs.
-          </>
-          at every step.
+          Open, honest, and clear Solutions tailored to client needs. at every
+          step.
         </>
       ),
     },
     {
       title: "Integrity in Delivery",
       description: (
-        <>
-          We deliver on our{" "}
-          <>
-            Solutions tailored to <br className="hidden lg:block" />
-            client needs.
-          </>
-          promises.
-        </>
+        <>We deliver on our Solutions tailored to client needs. promises.</>
       ),
     },
     {
       title: "Client-Centric Focus",
       description: (
         <>
-          Solutions tailored to{" "}
-          <>
-            Solutions tailored to <br className="hidden lg:block" />
-            client needs.
-          </>
-          client needs.
+          Solutions tailored to Solutions tailored to client needs. client
+          needs.
         </>
       ),
     },
@@ -45,12 +30,8 @@ const Foundationintegrity = () => {
       title: "Collaborative Environment",
       description: (
         <>
-          Inclusive teamwork
-          <>
-            Solutions tailored to <br className="hidden lg:block" />
-            client needs.
-          </>
-          drives innovation.
+          Inclusive teamwork Solutions tailored to client needs. drives
+          innovation.
         </>
       ),
     },

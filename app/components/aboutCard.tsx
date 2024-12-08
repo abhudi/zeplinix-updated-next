@@ -4,7 +4,7 @@ import React, { useRef, useState } from "react";
 
 const AboutUsCard: React.FC = () => {
   const [isMuted, setIsMuted] = useState(true);
-  const videoRef = useRef<HTMLVideoElement>(null);
+  const videoRef = useRef<HTMLVideoElement | null>(null);
 
   const toggleMute = () => {
     if (videoRef.current) {

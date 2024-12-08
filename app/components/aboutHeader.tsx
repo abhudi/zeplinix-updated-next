@@ -1,11 +1,16 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const Aboutheader = () => {
   const pathname = usePathname(); // Get the current pathname using usePathname hook
-  const isLargeScreen = window.innerWidth >= 1024; // Check if the screen size is large
+
+  const [isLargeScreen, setIsLargeScreen] = useState(false);
+
+  useEffect(() => {
+    setIsLargeScreen(window.innerWidth >= 1024);
+  }, []);
 
   // Define dynamic text content based on the current route
   let mainText = "";
